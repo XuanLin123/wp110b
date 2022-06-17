@@ -19,15 +19,15 @@ function convertToWord(letter) {
     if(letter === "r")
     {
         oo.src = "images/rock.png";
-        return "石";
+        return "rock";
     }
     if(letter === "p")
     {
         oo.src = "images/paper.png";
-        return "布";
+        return "paper";
     }
     oo.src = "images/scissors.png";
-    return "剪刀";
+    return "scissors";
 }
 
 function win(userChoice, computerChoice) {
@@ -36,7 +36,7 @@ function win(userChoice, computerChoice) {
     computerScore_span.innerHTML = computerScore;
     const smallUserWord = "user".fontsize(3).sub();
     const smallComputerWord = "comp".fontsize(3).sub();
-    result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} beats ${convertToWord(computerChoice)}${smallComputerWord} . You win!"`;
+    result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} 贏 ${convertToWord(computerChoice)}${smallComputerWord} . 你贏了!"`;
 }
 
 function lose(userChoice, computerChoice) {
@@ -45,13 +45,13 @@ function lose(userChoice, computerChoice) {
     computerScore_span.innerHTML = computerScore;
     const smallUserWord = "user".fontsize(3).sub();
     const smallComputerWord = "comp".fontsize(3).sub();
-    result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} loses to ${convertToWord(computerChoice)}${smallComputerWord} . You lose!"`;
+    result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} 輸 ${convertToWord(computerChoice)}${smallComputerWord} . 你輸了!"`;
 }
 
 function draw(userChoice, computerChoice) {
     const smallUserWord = "user".fontsize(3).sub();
     const smallComputerWord = "comp".fontsize(3).sub();
-    result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} equals ${convertToWord(computerChoice)}${smallComputerWord} . It is draw!"`;
+    result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} = ${convertToWord(computerChoice)}${smallComputerWord} . 平手!"`;
 }
 
 function game(userChoice) {
