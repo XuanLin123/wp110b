@@ -19,15 +19,15 @@ function convertToWord(letter) {
     if(letter === "r")
     {
         oo.src = "images/rock.png";
-        return "Rock";
+        return "石";
     }
     if(letter === "p")
     {
         oo.src = "images/paper.png";
-        return "Paper";
+        return "布";
     }
     oo.src = "images/scissors.png";
-    return "Scissors";
+    return "剪刀";
 }
 
 function win(userChoice, computerChoice) {
