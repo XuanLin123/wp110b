@@ -36,7 +36,7 @@ function win(userChoice, computerChoice) {
     computerScore_span.innerHTML = computerScore;
     const smallUserWord = "玩家".fontsize(3).sub();
     const smallComputerWord = "電腦".fontsize(3).sub();
-    result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} 贏 ${convertToWord(computerChoice)}${smallComputerWord}  你贏了!"`;
+    result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} 贏 ${convertToWord(computerChoice)}${smallComputerWord}  你贏了!`;
 }
 
 function lose(userChoice, computerChoice) {
@@ -45,13 +45,13 @@ function lose(userChoice, computerChoice) {
     computerScore_span.innerHTML = computerScore;
     const smallUserWord = "玩家".fontsize(3).sub();
     const smallComputerWord = "電腦".fontsize(3).sub();
-    result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} 輸 ${convertToWord(computerChoice)}${smallComputerWord}  你輸了!"`;
+    result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} 輸 ${convertToWord(computerChoice)}${smallComputerWord}  你輸了!`;
 }
 
 function draw(userChoice, computerChoice) {
     const smallUserWord = "玩家".fontsize(3).sub();
     const smallComputerWord = "電腦".fontsize(3).sub();
-    result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} = ${convertToWord(computerChoice)}${smallComputerWord}  平手!"`;
+    result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} = ${convertToWord(computerChoice)}${smallComputerWord}  平手!`;
 }
 
 function game(userChoice) {
