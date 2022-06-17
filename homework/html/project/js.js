@@ -34,8 +34,8 @@ function win(userChoice, computerChoice) {
     userScore++;
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
-    const smallUserWord = "user".fontsize(3).sub();
-    const smallComputerWord = "comp".fontsize(3).sub();
+    const smallUserWord = "玩家".fontsize(3).sub();
+    const smallComputerWord = "電腦".fontsize(3).sub();
     result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} 贏 ${convertToWord(computerChoice)}${smallComputerWord} . 你贏了!"`;
 }
 
